@@ -1,0 +1,44 @@
+@import "vars.scss";
+@import "mixins.scss";
+@import "header.scss";
+@import "footer.scss";
+
+body{
+  background-image: $mainBG;
+  background-repeat: no-repeat;
+height: auto;
+}
+
+.service{
+  h1{
+    font-family: $Semi;
+    font-weight: bold;
+    }
+    h3{
+      font-weight: bold;
+      font-family: $Poppins;
+    }
+    p{
+      font-family: $Rubik;
+    }
+}
+
+.service > .container > .row{
+  .col-md-4, a{
+    background-color: #f4f4f4;
+    a{
+      color: black;
+    }
+    &:hover{
+      background-color: #22445d;
+      transition: $Transition1s;
+      color: white;
+    }
+  }
+}
+
+.service > .container > .row{
+  .col-md-4{
+      max-width: 370px;
+  }
+}

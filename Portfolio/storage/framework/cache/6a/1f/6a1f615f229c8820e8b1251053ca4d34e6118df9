@@ -1,0 +1,138 @@
+1608678241a:1:{s:11:"contact.htm";a:10:{s:8:"fileName";s:11:"contact.htm";s:7:"content";s:2620:"title = "Portfolio_page"
+url = "/contacts"
+layout = "default"
+is_hidden = 0
+
+[genericForm]
+messages_success = "Your form was successfully submitted"
+messages_errors = "There were errors with your submission"
+inline_errors = "disabled"
+sanitize_data = "disabled"
+anonymize_ip = "disabled"
+recaptcha_theme = "light"
+recaptcha_type = "image"
+recaptcha_size = "normal"
+skip_database = 1
+emails_date_format = "Y-m-d"
+==
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ this.page.title  }}</title>
+
+  </head>
+  <body>
+    <main class="contact">
+      <div class="container">
+        <h1 class="">Contact us</h1>
+        <div class="row">
+          {% component'genericForm' %}
+      
+          <div class="col-md-5 cardk text-center">
+            <h3>Zamboo</h3>
+            <p class="mb-3">UI/UX Designer Developer</p>
+            <h4>Lets Work Together</h4>
+            <div class="row justify-content-center">
+              <a href="https://mail.google.com/"><label for="">
+                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+              </label></a>
+              <a href="https://www.skype.com/ru/"><label for="">
+                <i class="fa fa-skype" aria-hidden="true"></i>
+              </label></a>
+              <a href="https://ru.stackoverflow.com/"><label for="">
+                <i class="fa fa-stack-overflow" aria-hidden="true"></i>
+              </label></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="address mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 pt-3 pb-3">
+              <img class="mt-2" src="{{ 'assets/images/icon3.png' | theme }}" alt="">
+              <h4>Email</h4>
+              <p>abc123@gmail.com
+                <br>xyz987@gmail.com</p>
+              </div>
+              <div class="col-md-4 pt-3 pb-3">
+                <img class="mt-2" src="{{ 'assets/images/icon2.png' | theme }}" alt="">
+                <h4>Email</h4>
+                <p>
+                  +1234 159 8903 22<br>
+                  +0321 2369 5897 11 </p>
+                </div>
+                <div class="col-md-4 pt-3 pb-3">
+                  <img class="mt-2" src="{{ 'assets/images/icon1.png' | theme }}" alt="">
+                  <h4>Email</h4>
+                  <p>
+                    123/a san freedom Road<br>
+                    New yourk city</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+  </body>
+</html>";s:5:"mtime";i:1608670358;s:6:"markup";s:2188:"<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ this.page.title  }}</title>
+
+  </head>
+  <body>
+    <main class="contact">
+      <div class="container">
+        <h1 class="">Contact us</h1>
+        <div class="row">
+          {% component'genericForm' %}
+      
+          <div class="col-md-5 cardk text-center">
+            <h3>Zamboo</h3>
+            <p class="mb-3">UI/UX Designer Developer</p>
+            <h4>Lets Work Together</h4>
+            <div class="row justify-content-center">
+              <a href="https://mail.google.com/"><label for="">
+                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+              </label></a>
+              <a href="https://www.skype.com/ru/"><label for="">
+                <i class="fa fa-skype" aria-hidden="true"></i>
+              </label></a>
+              <a href="https://ru.stackoverflow.com/"><label for="">
+                <i class="fa fa-stack-overflow" aria-hidden="true"></i>
+              </label></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="address mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 pt-3 pb-3">
+              <img class="mt-2" src="{{ 'assets/images/icon3.png' | theme }}" alt="">
+              <h4>Email</h4>
+              <p>abc123@gmail.com
+                <br>xyz987@gmail.com</p>
+              </div>
+              <div class="col-md-4 pt-3 pb-3">
+                <img class="mt-2" src="{{ 'assets/images/icon2.png' | theme }}" alt="">
+                <h4>Email</h4>
+                <p>
+                  +1234 159 8903 22<br>
+                  +0321 2369 5897 11 </p>
+                </div>
+                <div class="col-md-4 pt-3 pb-3">
+                  <img class="mt-2" src="{{ 'assets/images/icon1.png' | theme }}" alt="">
+                  <h4>Email</h4>
+                  <p>
+                    123/a san freedom Road<br>
+                    New yourk city</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+  </body>
+</html>";s:4:"code";N;s:5:"title";s:14:"Portfolio_page";s:3:"url";s:9:"/contacts";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"genericForm";a:10:{s:16:"messages_success";s:36:"Your form was successfully submitted";s:15:"messages_errors";s:38:"There were errors with your submission";s:13:"inline_errors";s:8:"disabled";s:13:"sanitize_data";s:8:"disabled";s:12:"anonymize_ip";s:8:"disabled";s:15:"recaptcha_theme";s:5:"light";s:14:"recaptcha_type";s:5:"image";s:14:"recaptcha_size";s:6:"normal";s:13:"skip_database";s:1:"1";s:18:"emails_date_format";s:5:"Y-m-d";}}}

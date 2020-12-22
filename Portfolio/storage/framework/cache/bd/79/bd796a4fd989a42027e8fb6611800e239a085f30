@@ -1,0 +1,44 @@
+1608678342a:1:{s:11:"default.htm";a:5:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:846:"<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ this.page.title  }}</title>
+    <link rel="stylesheet" href="{{ 'assets/style/css/client.css' | theme }}">
+    <link rel="stylesheet" href="{{ 'assets/style/css/service.css' | theme }}">
+    <link rel="stylesheet" href="{{ 'assets/style/css/service1.css' | theme }}">
+        <link rel="stylesheet" href="{{ 'assets/style/css/index_file.css' | theme }}">
+        <link rel="stylesheet" href="{{  'assets/style/css/bootstrap.css' | theme }}">
+        <link rel="stylesheet" href="{{  'assets/font-awesome-4.7.0/css/font-awesome.min.css' | theme }}">
+        {% styles %}
+        {% framework extras %}
+        {% scripts %}
+  </head>
+  <body>
+{% partial 'header' %}
+{% page %}
+{% scripts %}
+{% partial 'footer' %}
+  </body>
+</html>
+";s:5:"mtime";i:1608677106;s:6:"markup";s:844:"<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ this.page.title  }}</title>
+    <link rel="stylesheet" href="{{ 'assets/style/css/client.css' | theme }}">
+    <link rel="stylesheet" href="{{ 'assets/style/css/service.css' | theme }}">
+    <link rel="stylesheet" href="{{ 'assets/style/css/service1.css' | theme }}">
+        <link rel="stylesheet" href="{{ 'assets/style/css/index_file.css' | theme }}">
+        <link rel="stylesheet" href="{{  'assets/style/css/bootstrap.css' | theme }}">
+        <link rel="stylesheet" href="{{  'assets/font-awesome-4.7.0/css/font-awesome.min.css' | theme }}">
+        {% styles %}
+        {% framework extras %}
+        {% scripts %}
+  </head>
+  <body>
+{% partial 'header' %}
+{% page %}
+{% scripts %}
+{% partial 'footer' %}
+  </body>
+</html>";s:4:"code";N;}}

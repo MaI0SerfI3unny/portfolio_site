@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ this.page.title  }}</title>
+    <link rel="stylesheet" href="{{ 'assets/style/css/client.css' | theme }}">
+    <link rel="stylesheet" href="{{ 'assets/style/css/service.css' | theme }}">
+    <link rel="stylesheet" href="{{ 'assets/style/css/service1.css' | theme }}">
+        <link rel="stylesheet" href="{{ 'assets/style/css/index_file.css' | theme }}">
+        <link rel="stylesheet" href="{{  'assets/style/css/bootstrap.css' | theme }}">
+        <link rel="stylesheet" href="{{  'assets/font-awesome-4.7.0/css/font-awesome.min.css' | theme }}">
+        {% styles %}
+        {% framework extras %}
+        {% scripts %}
+  </head>
+  <body>
+{% partial 'header' %}
+{% page %}
+{% scripts %}
+{% partial 'footer' %}
+  </body>
+</html>

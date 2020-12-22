@@ -1,0 +1,33 @@
+1608678407a:1:{s:10:"footer.htm";a:5:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:538:"
+<footer>
+<div class="container">
+  <a href="#"><label for="">
+    <i class="fa fa-facebook" aria-hidden="true"></i>
+  </label></a>
+  <a href="https://www.instagram.com/?hl=ru"><label for="">
+    <i class="fa fa-instagram" aria-hidden="true"></i>
+  </label></a>
+  <a href="https://twitter.com/?lang=ru"><label for="">
+    <i class="fa fa-twitter" aria-hidden="true"></i></a>
+  </label></a>
+<a href="https://www.behance.net/"><label for="">
+  <i class="fa fa-behance" aria-hidden="true"></i>
+</label></a>
+</div>
+</footer>
+";s:5:"mtime";i:1608677805;s:6:"markup";s:534:"<footer>
+<div class="container">
+  <a href="#"><label for="">
+    <i class="fa fa-facebook" aria-hidden="true"></i>
+  </label></a>
+  <a href="https://www.instagram.com/?hl=ru"><label for="">
+    <i class="fa fa-instagram" aria-hidden="true"></i>
+  </label></a>
+  <a href="https://twitter.com/?lang=ru"><label for="">
+    <i class="fa fa-twitter" aria-hidden="true"></i></a>
+  </label></a>
+<a href="https://www.behance.net/"><label for="">
+  <i class="fa fa-behance" aria-hidden="true"></i>
+</label></a>
+</div>
+</footer>";s:4:"code";N;}}

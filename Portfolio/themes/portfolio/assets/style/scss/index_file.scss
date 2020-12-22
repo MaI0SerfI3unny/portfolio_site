@@ -1,0 +1,64 @@
+@import "vars.scss";
+@import "mixins.scss";
+@import "header.scss";
+@import "footer.scss";
+
+
+
+*{
+  margin: $null;
+  padding: $null;
+}
+
+body{
+  height: auto;
+}
+
+.main{
+  background-image: url(localhost/Portfolio/img/bg.jpg);
+  background-repeat: no-repeat;
+  margin-top: 2rem;
+  @include setContainer(100%, 470px);
+
+  img{
+    width: 90%;
+    z-index: 1;
+  }
+
+  h1{
+    color: $colMain;
+    font-weight: bolder;
+    font-family: $Poppins;
+  }
+  h2{
+    font-size: 17px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: $Poppins;
+  }
+  p{
+    font-size: 14px;
+    font-family: $Rubik;
+    &:first-child{
+      font-size: 20px;
+      font-family: $Poppins;
+    }
+  }
+  button{
+    cursor: pointer;
+      width: $ButtonWidth;
+      border: none;
+      height: 40px;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+      min-width: 120px;
+  }
+  .down{
+    color: white;
+    background-color: $colMain;
+  }
+  .hire{
+    border: solid 1px $colMain;
+    background-color: white;
+  }
+}

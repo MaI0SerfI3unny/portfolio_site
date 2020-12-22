@@ -1,0 +1,113 @@
+@import "vars.scss";
+@import "mixins.scss";
+@import "header.scss";
+@import "footer.scss";
+
+body{
+  background-image: $mainBG;
+  background-repeat: no-repeat;
+  height: auto;
+}
+
+.client{
+  h1{
+    font-family: $Semi;
+    font-weight: bold;
+  }
+  p{
+    font-family: $Rubik;
+  }
+  h5{
+    font-family: $Rubik;
+    font-weight: bold;
+  }
+  img{
+    @include setContainer(10%,36%);
+    border-radius: 100%;
+    max-width: 111px;
+    max-height: 111px;
+    min-width: 111px;
+    min-height: 111px;
+  }
+}
+
+/*---------------------------------SLIDER-------------------------------------*/
+
+.slider {
+  background-image: url(/img/icon.png);
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position:center;
+  width: 97%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  .slider__wrapper {
+    display: inline-flex;
+    transition: transform 0.6s ease;
+    .slider__item {
+      flex: $null $null 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.slider__control {
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  height: 200px;
+  text-align: center;
+  background: black;
+  .slider__control:hover,
+  .slider__control:focus {
+    text-decoration: none;
+    outline: $null;
+    opacity: .9;
+  }
+
+
+
+  .slider__control_left {
+    left: $null;
+
+  }
+
+  .slider__control_right {
+    right: $null;
+  }
+}
+/*-------------------------------------BEFORE--------------------------------------*/
+.slider__control::before {
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 15px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider__control_right::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.slider__control_left::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+/*------------------------------MEDIA---------------------------------------*/
+@media (min-width: 980px) {
+  .slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 980px) {
+  .slider__item {
+    flex: 0 0 100%;
+    text-align: $Text-center;
+    max-width: 100%;
+  }
+  *{
+    text-align: $Text-center;
+  }
+}

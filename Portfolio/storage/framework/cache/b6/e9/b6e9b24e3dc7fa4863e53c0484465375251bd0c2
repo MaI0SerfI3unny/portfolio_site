@@ -1,0 +1,95 @@
+1608678394a:1:{s:21:"portfolio_content.htm";a:6:{s:8:"fileName";s:21:"portfolio_content.htm";s:7:"content";s:1168:"[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "Portfolio"
+postsPerPage = 1
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "portfolio"
+postPage = "post"
+==
+<style media="screen">
+  .container .col-md-3{
+    z-index: 1;
+    border: 1px solid black;
+    background-color: #382c2c;
+    height: 350px;
+    padding: 0;
+    max-height: 350px;
+    min-height: 350px;
+  }
+  .container .col-md-3:hover{
+    transition: 0.6s;
+    z-index: 2;
+    min-width: 300px;
+    min-height: 350px;
+    box-shadow: 10px 10px;
+  }
+
+  .time{
+    font-size: 12px;
+  }
+</style>
+
+{% set posts = blogPosts.posts  %}
+
+{% for post in posts %}
+<div class="col-md-3">
+  <a href="{{ post.url }}">
+{% for image in post.featured_images|slice(0, 1) %}
+  <img src="{{image.path}}" style="width:100%;" alt="">
+{% endfor %}
+  <h3 class="text-white ml-2">{{ post.title }}</h3>
+  <p class="text-white ml-2">{{ post.content}}</p>
+  <p class="text-white ml-2 time">{{ post.published_at}}</p>
+  </a>
+</div>
+{% else %}
+{{ noPostsMessage }}
+{% endfor %}
+
+<div class="container">
+  {% component 'commentsPost' %}
+</div>
+";s:5:"mtime";i:1608677790;s:6:"markup";s:958:"<style media="screen">
+  .container .col-md-3{
+    z-index: 1;
+    border: 1px solid black;
+    background-color: #382c2c;
+    height: 350px;
+    padding: 0;
+    max-height: 350px;
+    min-height: 350px;
+  }
+  .container .col-md-3:hover{
+    transition: 0.6s;
+    z-index: 2;
+    min-width: 300px;
+    min-height: 350px;
+    box-shadow: 10px 10px;
+  }
+
+  .time{
+    font-size: 12px;
+  }
+</style>
+
+{% set posts = blogPosts.posts  %}
+
+{% for post in posts %}
+<div class="col-md-3">
+  <a href="{{ post.url }}">
+{% for image in post.featured_images|slice(0, 1) %}
+  <img src="{{image.path}}" style="width:100%;" alt="">
+{% endfor %}
+  <h3 class="text-white ml-2">{{ post.title }}</h3>
+  <p class="text-white ml-2">{{ post.content}}</p>
+  <p class="text-white ml-2 time">{{ post.published_at}}</p>
+  </a>
+</div>
+{% else %}
+{{ noPostsMessage }}
+{% endfor %}
+
+<div class="container">
+  {% component 'commentsPost' %}
+</div>";s:4:"code";N;s:9:"blogPosts";a:7:{s:10:"pageNumber";s:11:"{{ :page }}";s:14:"categoryFilter";s:9:"Portfolio";s:12:"postsPerPage";s:1:"1";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:9:"portfolio";s:8:"postPage";s:4:"post";}}}

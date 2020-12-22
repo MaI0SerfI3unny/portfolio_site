@@ -1,0 +1,59 @@
+1608678134a:1:{s:8:"post.htm";a:11:{s:8:"fileName";s:8:"post.htm";s:7:"content";s:792:"title = "Portfolio_post"
+url = "/portfolio/:slug"
+layout = "default"
+is_hidden = 0
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "clients"
+
+[commentsPost]
+==
+<style media="screen">
+  .post_content{
+    width: 100%;
+    background-color: #382c2c;
+    height: auto;
+  }
+  .post_content img{
+    padding: 25px;
+  }
+
+</style>
+
+<div class="container post_content pb-4">
+  {% for image in post.featured_images|slice(0, 1) %}
+    <p class="text-center"><img src="{{image.path}}" style="width:100%;" alt=""></p>
+  {% endfor %}
+  <h1 class="mb-4 text-white ml-4">{{ post.title }}</h1>
+  <p class="text-white ml-4">{{ post.content }}</p>
+  <p class="text-white ml-4">{{ post.published_at}}</p>
+</div>
+
+<div class="container">
+  {% component'commentsPost' %}
+</div>
+";s:5:"mtime";i:1608675921;s:6:"markup";s:619:"<style media="screen">
+  .post_content{
+    width: 100%;
+    background-color: #382c2c;
+    height: auto;
+  }
+  .post_content img{
+    padding: 25px;
+  }
+
+</style>
+
+<div class="container post_content pb-4">
+  {% for image in post.featured_images|slice(0, 1) %}
+    <p class="text-center"><img src="{{image.path}}" style="width:100%;" alt=""></p>
+  {% endfor %}
+  <h1 class="mb-4 text-white ml-4">{{ post.title }}</h1>
+  <p class="text-white ml-4">{{ post.content }}</p>
+  <p class="text-white ml-4">{{ post.published_at}}</p>
+</div>
+
+<div class="container">
+  {% component'commentsPost' %}
+</div>";s:4:"code";N;s:5:"title";s:14:"Portfolio_post";s:3:"url";s:16:"/portfolio/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:8:"blogPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:7:"clients";}s:12:"commentsPost";a:0:{}}}

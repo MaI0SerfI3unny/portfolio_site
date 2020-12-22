@@ -1,0 +1,17 @@
+
+footer{
+  @include setContainer(100%, 30px);
+  text-align: center;
+  label{
+    color: black;
+    padding: 8px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 50%;
+    &:hover{
+      background-color: $colMain;
+      color: white;
+    }
+
+    }
+  }

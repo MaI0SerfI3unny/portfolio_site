@@ -1,0 +1,32 @@
+title = "Portfolio_clients"
+url = "/clients"
+layout = "default"
+==
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ this.page.title  }}</title>
+
+  </head>
+  <body>
+    <main class="client">
+    <div class="container">
+
+    <h1 class="mt-5 mb-4">Testimonials</h1>
+    <div class="slider mb-5 pb-3">
+    <div class="slider__wrapper mb-4">
+
+      {% partial 'client_content' %}
+
+
+    </div>
+    <a class="slider__control slider__control_left" href="#" role="button"></a>
+    <a class="slider__control slider__control_right" href="#" role="button"></a>
+
+    <script src="{{ 'assets/js/slider.js' | theme }}"></script>
+    </div>
+    </div>
+    </main>
+  </body>
+</html>

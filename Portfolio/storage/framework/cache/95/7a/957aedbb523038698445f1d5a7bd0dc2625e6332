@@ -1,0 +1,60 @@
+1608678241a:1:{s:11:"clients.htm";a:8:{s:8:"fileName";s:11:"clients.htm";s:7:"content";s:742:"title = "Portfolio_clients"
+url = "/clients"
+layout = "default"
+==
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ this.page.title  }}</title>
+
+  </head>
+  <body>
+    <main class="client">
+    <div class="container">
+
+    <h1 class="mt-5 mb-4">Testimonials</h1>
+    <div class="slider mb-5 pb-3">
+    <div class="slider__wrapper mb-4">
+
+      {% partial 'client_content' %}
+
+
+    </div>
+    <a class="slider__control slider__control_left" href="#" role="button"></a>
+    <a class="slider__control slider__control_right" href="#" role="button"></a>
+
+    <script src="{{ 'assets/js/slider.js' | theme }}"></script>
+    </div>
+    </div>
+    </main>
+  </body>
+</html>
+";s:5:"mtime";i:1608434063;s:6:"markup";s:669:"<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ this.page.title  }}</title>
+
+  </head>
+  <body>
+    <main class="client">
+    <div class="container">
+
+    <h1 class="mt-5 mb-4">Testimonials</h1>
+    <div class="slider mb-5 pb-3">
+    <div class="slider__wrapper mb-4">
+
+      {% partial 'client_content' %}
+
+
+    </div>
+    <a class="slider__control slider__control_left" href="#" role="button"></a>
+    <a class="slider__control slider__control_right" href="#" role="button"></a>
+
+    <script src="{{ 'assets/js/slider.js' | theme }}"></script>
+    </div>
+    </div>
+    </main>
+  </body>
+</html>";s:4:"code";N;s:5:"title";s:17:"Portfolio_clients";s:3:"url";s:8:"/clients";s:6:"layout";s:7:"default";}}

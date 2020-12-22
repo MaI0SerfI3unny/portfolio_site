@@ -1,0 +1,36 @@
+1608678241a:1:{s:13:"portfolio.htm";a:8:{s:8:"fileName";s:13:"portfolio.htm";s:7:"content";s:377:"title = "Portfolio_page"
+url = "/portfolio"
+layout = "default"
+==
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ this.page.title  }}</title>
+
+  </head>
+  <body>
+<div class="container">
+  <h1 class="mb-5">Portfolio</h1>
+  <div class="row">
+    {% partial 'portfolio_content' %}
+  </div>
+</div>
+  </body>
+</html>
+";s:5:"mtime";i:1608425385;s:6:"markup";s:305:"<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ this.page.title  }}</title>
+
+  </head>
+  <body>
+<div class="container">
+  <h1 class="mb-5">Portfolio</h1>
+  <div class="row">
+    {% partial 'portfolio_content' %}
+  </div>
+</div>
+  </body>
+</html>";s:4:"code";N;s:5:"title";s:14:"Portfolio_page";s:3:"url";s:10:"/portfolio";s:6:"layout";s:7:"default";}}

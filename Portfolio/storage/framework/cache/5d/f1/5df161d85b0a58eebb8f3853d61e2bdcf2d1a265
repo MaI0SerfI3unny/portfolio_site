@@ -1,0 +1,134 @@
+1608678241a:1:{s:11:"service.htm";a:8:{s:8:"fileName";s:11:"service.htm";s:7:"content";s:3019:"title = "Portfolio_page"
+url = "/services"
+layout = "default"
+==
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ this.page.title  }}</title>
+
+  </head>
+  <body>
+    <main class="service">
+      <div class="container">
+        <h1 class="mb-5">Service</h1>
+        <div class="row justify-content-center">
+          <div class="col-md-4 p-4 m-1">
+            <a href="#">
+              <p class="text-center"><img src="{{ 'assets/images/service1.png' | theme }}" alt=""></p>
+              <h3 class="text-center">UI Design</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </a>
+          </div>
+
+          <div class="col-md-4 p-4 m-1">
+            <a href="#">
+              <p class="text-center"><img src="{{ 'assets/images/service2.png' | theme }}" alt=""></p>
+              <h3 class="text-center">UX Design</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </a>
+          </div>
+
+          <div class="col-md-4 p-4 m-1">
+            <a href="#">
+              <p class="text-center"><img src="{{ 'assets/images/service3.png' | theme }}" alt=""></p>
+              <h3 class="text-center">Brancling</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </a>
+          </div>
+
+          <div class="col-md-4 p-4 m-1">
+            <a href="#">
+              <p class="text-center"><img src="{{ 'assets/images/service4.png' | theme }}" alt=""></p>
+              <h3 class="text-center">Illustration</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </a>
+          </div>
+
+          <div class="col-md-4 p-4 m-1">
+            <a href="#">
+              <p class="text-center"><img src="{{ 'assets/images/service5.png' | theme }}" alt=""></p>
+              <h3 class="text-center">Publication</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </a>
+          </div>
+
+          <div class="col-md-4 p-4 m-1">
+            <a href="#">
+              <p class="text-center"><img src="{{ 'assets/images/service6.png' | theme }}" alt=""></p>
+              <h3 class="text-center">Content-Design</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>
+";s:5:"mtime";i:1608422696;s:6:"markup";s:2948:"<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ this.page.title  }}</title>
+
+  </head>
+  <body>
+    <main class="service">
+      <div class="container">
+        <h1 class="mb-5">Service</h1>
+        <div class="row justify-content-center">
+          <div class="col-md-4 p-4 m-1">
+            <a href="#">
+              <p class="text-center"><img src="{{ 'assets/images/service1.png' | theme }}" alt=""></p>
+              <h3 class="text-center">UI Design</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </a>
+          </div>
+
+          <div class="col-md-4 p-4 m-1">
+            <a href="#">
+              <p class="text-center"><img src="{{ 'assets/images/service2.png' | theme }}" alt=""></p>
+              <h3 class="text-center">UX Design</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </a>
+          </div>
+
+          <div class="col-md-4 p-4 m-1">
+            <a href="#">
+              <p class="text-center"><img src="{{ 'assets/images/service3.png' | theme }}" alt=""></p>
+              <h3 class="text-center">Brancling</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </a>
+          </div>
+
+          <div class="col-md-4 p-4 m-1">
+            <a href="#">
+              <p class="text-center"><img src="{{ 'assets/images/service4.png' | theme }}" alt=""></p>
+              <h3 class="text-center">Illustration</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </a>
+          </div>
+
+          <div class="col-md-4 p-4 m-1">
+            <a href="#">
+              <p class="text-center"><img src="{{ 'assets/images/service5.png' | theme }}" alt=""></p>
+              <h3 class="text-center">Publication</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </a>
+          </div>
+
+          <div class="col-md-4 p-4 m-1">
+            <a href="#">
+              <p class="text-center"><img src="{{ 'assets/images/service6.png' | theme }}" alt=""></p>
+              <h3 class="text-center">Content-Design</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>";s:4:"code";N;s:5:"title";s:14:"Portfolio_page";s:3:"url";s:9:"/services";s:6:"layout";s:7:"default";}}

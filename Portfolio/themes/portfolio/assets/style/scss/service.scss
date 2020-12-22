@@ -1,0 +1,84 @@
+@import "vars.scss";
+@import "mixins.scss";
+@import "header.scss";
+@import "footer.scss";
+
+
+*{
+  margin: $null;
+  padding: $null;
+}
+
+body{
+  background-image: $mainBG;
+  background-repeat: no-repeat;
+height: auto;
+p{
+  font-family: $Poppins;
+}
+}
+
+.contact{
+  @include setContainer(100%, 670px);
+  input{
+    @include setContainer(100%, 40px);
+    padding: 10px;
+    background-color: #f9f9f9;
+    border:none;
+  }
+  textarea{
+    @include setContainer(100%, 120px);
+    padding: 10px;
+    background-color: grey;
+    background-color: #f9f9f9;
+    border:none;
+  }
+  button{
+    @include setContainer(23%, 40px);
+    border: none;
+    color: white;
+    background-color: $colMain;
+  }
+  h1{
+    font-family: $Semi;
+    font-weight: bold;
+  }
+}
+
+.cardk{
+  padding: 6rem;
+  background-color: white;
+  @include setContainer(100%, auto);
+  label{
+    cursor: pointer;
+    color: black;
+    padding: 8px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 50%;
+    &:hover{
+      background-color: $colMain;
+      color: white;
+    }
+    }
+    h4{
+      font-weight: bold;
+      font-family: $Semi;
+    }
+    h3{
+      font-style: normal;
+      font-family: $Poppins;
+    }
+    p{
+      font-size: 13px;
+    }
+}
+
+.address{
+  background-color: #f9f9f9;
+  @include setContainer(100%, auto);
+  min-height: 140px;
+  h1{
+    font-family: $Poppins;
+  }
+}

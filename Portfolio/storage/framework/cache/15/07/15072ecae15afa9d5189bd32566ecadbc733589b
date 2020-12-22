@@ -1,0 +1,72 @@
+1608678241a:1:{s:8:"home.htm";a:8:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:1180:"title = "Portfolio"
+url = "/"
+layout = "default"
+==
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ this.page.title  }}</title>
+
+  </head>
+  <body>
+
+
+<main class="main">
+  <div class="container">
+  <div class="col-md-6 float-left">
+    <img class="person" src="{{ 'assets/images/person.png' | theme}}" alt="">
+  </div>
+  <div class="col-md-6 float-right">
+    <p>Hi, I’ am</p>
+    <h1 class="text-uppercase">ZAMBOO</h1>
+    <h2>UI/UX Designer and Web Developer based in USA</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting and that is
+industry. Lorem Ipsum has been the industry's standard dummy text iever since the 1500s, when an unknown
+
+printer took a galley of type and scrambled it to make a type specimen book. remaining essentially unchanged. It was </p>
+<div class="container">
+
+    <a href=".\storage\app\uploads\resume.docx"><button class="down" type="button" name="button">Download CV</button></a>
+    <a href="{{ 'contact'|page }}"><button class="hire" type="button" name="button">Hire me</button></a>
+  </div>
+  </div>
+</div>
+
+</main>
+  </body>
+</html>
+";s:5:"mtime";i:1608434559;s:6:"markup";s:1122:"<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ this.page.title  }}</title>
+
+  </head>
+  <body>
+
+
+<main class="main">
+  <div class="container">
+  <div class="col-md-6 float-left">
+    <img class="person" src="{{ 'assets/images/person.png' | theme}}" alt="">
+  </div>
+  <div class="col-md-6 float-right">
+    <p>Hi, I’ am</p>
+    <h1 class="text-uppercase">ZAMBOO</h1>
+    <h2>UI/UX Designer and Web Developer based in USA</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting and that is
+industry. Lorem Ipsum has been the industry's standard dummy text iever since the 1500s, when an unknown
+
+printer took a galley of type and scrambled it to make a type specimen book. remaining essentially unchanged. It was </p>
+<div class="container">
+
+    <a href=".\storage\app\uploads\resume.docx"><button class="down" type="button" name="button">Download CV</button></a>
+    <a href="{{ 'contact'|page }}"><button class="hire" type="button" name="button">Hire me</button></a>
+  </div>
+  </div>
+</div>
+
+</main>
+  </body>
+</html>";s:4:"code";N;s:5:"title";s:9:"Portfolio";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";}}
