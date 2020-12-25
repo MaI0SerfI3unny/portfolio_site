@@ -29,13 +29,13 @@ class __TwigTemplate_611959ab40f5bbbd5dfed9a33b238d22c8240699d9e30df55f0d964f6a8
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("styles" => 12, "framework" => 13, "scripts" => 14, "partial" => 17, "page" => 18);
+        $tags = array("styles" => 16, "partial" => 19, "page" => 21);
         $filters = array("escape" => 5, "theme" => 6);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
-                ['styles', 'framework', 'scripts', 'partial', 'page'],
+                ['styles', 'partial', 'page'],
                 ['escape', 'theme'],
                 []
             );
@@ -91,44 +91,35 @@ class __TwigTemplate_611959ab40f5bbbd5dfed9a33b238d22c8240699d9e30df55f0d964f6a8
         // line 11
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/font-awesome-4.7.0/css/font-awesome.min.css");
         echo "\">
+        <script
+  src=\"https://code.jquery.com/jquery-3.5.1.js\"
+  integrity=\"sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=\"
+  crossorigin=\"anonymous\"></script>
         ";
-        // line 12
+        // line 16
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('css');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('styles');
-        // line 13
-        echo "        ";
-        $_minify = System\Classes\CombineAssets::instance()->useMinify;
-        if ($_minify) {
-            echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.combined-min.js"></script>'.PHP_EOL;
-        }
-        else {
-            echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
-            echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.extras.js"></script>'.PHP_EOL;
-        }
-        echo '<link rel="stylesheet" property="stylesheet" href="' . Request::getBasePath() .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
-        unset($_minify);
-        // line 14
-        echo "        ";
-        echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
-        echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 15
+        // line 17
         echo "  </head>
   <body>
 ";
-        // line 17
+        // line 19
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("header"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 18
-        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
-        // line 19
-        echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
-        echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
         // line 20
+        echo "
+";
+        // line 21
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
+        // line 22
+        echo "
+";
+        // line 23
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 21
+        // line 24
         echo "  </body>
 </html>";
     }
@@ -145,7 +136,7 @@ class __TwigTemplate_611959ab40f5bbbd5dfed9a33b238d22c8240699d9e30df55f0d964f6a8
 
     public function getDebugInfo()
     {
-        return array (  132 => 21,  128 => 20,  125 => 19,  123 => 18,  119 => 17,  115 => 15,  111 => 14,  99 => 13,  96 => 12,  92 => 11,  88 => 10,  84 => 9,  80 => 8,  76 => 7,  72 => 6,  68 => 5,  62 => 1,);
+        return array (  123 => 24,  119 => 23,  116 => 22,  114 => 21,  111 => 20,  107 => 19,  103 => 17,  100 => 16,  92 => 11,  88 => 10,  84 => 9,  80 => 8,  76 => 7,  72 => 6,  68 => 5,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -161,14 +152,17 @@ class __TwigTemplate_611959ab40f5bbbd5dfed9a33b238d22c8240699d9e30df55f0d964f6a8
         <link rel=\"stylesheet\" href=\"{{ 'assets/style/css/index_file.css' | theme }}\">
         <link rel=\"stylesheet\" href=\"{{  'assets/style/css/bootstrap.css' | theme }}\">
         <link rel=\"stylesheet\" href=\"{{  'assets/font-awesome-4.7.0/css/font-awesome.min.css' | theme }}\">
+        <script
+  src=\"https://code.jquery.com/jquery-3.5.1.js\"
+  integrity=\"sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=\"
+  crossorigin=\"anonymous\"></script>
         {% styles %}
-        {% framework extras %}
-        {% scripts %}
   </head>
   <body>
 {% partial 'header' %}
+
 {% page %}
-{% scripts %}
+
 {% partial 'footer' %}
   </body>
 </html>", "C:\\xampp\\htdocs\\Portfolio/themes/portfolio/layouts/default.htm", "");

@@ -1,6 +1,16 @@
-1608678241a:1:{s:11:"service.htm";a:8:{s:8:"fileName";s:11:"service.htm";s:7:"content";s:3019:"title = "Portfolio_page"
+1608906133a:1:{s:11:"service.htm";a:10:{s:8:"fileName";s:11:"service.htm";s:7:"content";s:1169:"title = "Portfolio_page"
 url = "/services"
 layout = "default"
+is_hidden = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "Service"
+postsPerPage = 6
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "service"
+postPage = "service_post"
 ==
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -14,60 +24,28 @@ layout = "default"
       <div class="container">
         <h1 class="mb-5">Service</h1>
         <div class="row justify-content-center">
-          <div class="col-md-4 p-4 m-1">
-            <a href="#">
-              <p class="text-center"><img src="{{ 'assets/images/service1.png' | theme }}" alt=""></p>
-              <h3 class="text-center">UI Design</h3>
-              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </a>
-          </div>
+
+        {% set posts3 = blogPosts.posts  %}
+        {% for post in posts %}
 
           <div class="col-md-4 p-4 m-1">
-            <a href="#">
-              <p class="text-center"><img src="{{ 'assets/images/service2.png' | theme }}" alt=""></p>
-              <h3 class="text-center">UX Design</h3>
-              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="{{ post.url }}">
+            {% for image in post.featured_images|slice(0, 1) %}
+            <p class="text-center"><img src="{{ image.path}}" alt=""></p>
+            {% endfor %}
+              <h3 class="text-center">{{ post.title }}</h3>
+              <p class="text-center">{{ post.excerpt }}</p>
             </a>
           </div>
+          {% endfor %}
 
-          <div class="col-md-4 p-4 m-1">
-            <a href="#">
-              <p class="text-center"><img src="{{ 'assets/images/service3.png' | theme }}" alt=""></p>
-              <h3 class="text-center">Brancling</h3>
-              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </a>
-          </div>
 
-          <div class="col-md-4 p-4 m-1">
-            <a href="#">
-              <p class="text-center"><img src="{{ 'assets/images/service4.png' | theme }}" alt=""></p>
-              <h3 class="text-center">Illustration</h3>
-              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </a>
-          </div>
-
-          <div class="col-md-4 p-4 m-1">
-            <a href="#">
-              <p class="text-center"><img src="{{ 'assets/images/service5.png' | theme }}" alt=""></p>
-              <h3 class="text-center">Publication</h3>
-              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </a>
-          </div>
-
-          <div class="col-md-4 p-4 m-1">
-            <a href="#">
-              <p class="text-center"><img src="{{ 'assets/images/service6.png' | theme }}" alt=""></p>
-              <h3 class="text-center">Content-Design</h3>
-              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </a>
-          </div>
         </div>
       </div>
     </main>
 
   </body>
-</html>
-";s:5:"mtime";i:1608422696;s:6:"markup";s:2948:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1608903477;s:6:"markup";s:875:"<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -79,56 +57,25 @@ layout = "default"
       <div class="container">
         <h1 class="mb-5">Service</h1>
         <div class="row justify-content-center">
-          <div class="col-md-4 p-4 m-1">
-            <a href="#">
-              <p class="text-center"><img src="{{ 'assets/images/service1.png' | theme }}" alt=""></p>
-              <h3 class="text-center">UI Design</h3>
-              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </a>
-          </div>
+
+        {% set posts3 = blogPosts.posts  %}
+        {% for post in posts %}
 
           <div class="col-md-4 p-4 m-1">
-            <a href="#">
-              <p class="text-center"><img src="{{ 'assets/images/service2.png' | theme }}" alt=""></p>
-              <h3 class="text-center">UX Design</h3>
-              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="{{ post.url }}">
+            {% for image in post.featured_images|slice(0, 1) %}
+            <p class="text-center"><img src="{{ image.path}}" alt=""></p>
+            {% endfor %}
+              <h3 class="text-center">{{ post.title }}</h3>
+              <p class="text-center">{{ post.excerpt }}</p>
             </a>
           </div>
+          {% endfor %}
 
-          <div class="col-md-4 p-4 m-1">
-            <a href="#">
-              <p class="text-center"><img src="{{ 'assets/images/service3.png' | theme }}" alt=""></p>
-              <h3 class="text-center">Brancling</h3>
-              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </a>
-          </div>
 
-          <div class="col-md-4 p-4 m-1">
-            <a href="#">
-              <p class="text-center"><img src="{{ 'assets/images/service4.png' | theme }}" alt=""></p>
-              <h3 class="text-center">Illustration</h3>
-              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </a>
-          </div>
-
-          <div class="col-md-4 p-4 m-1">
-            <a href="#">
-              <p class="text-center"><img src="{{ 'assets/images/service5.png' | theme }}" alt=""></p>
-              <h3 class="text-center">Publication</h3>
-              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </a>
-          </div>
-
-          <div class="col-md-4 p-4 m-1">
-            <a href="#">
-              <p class="text-center"><img src="{{ 'assets/images/service6.png' | theme }}" alt=""></p>
-              <h3 class="text-center">Content-Design</h3>
-              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </a>
-          </div>
         </div>
       </div>
     </main>
 
   </body>
-</html>";s:4:"code";N;s:5:"title";s:14:"Portfolio_page";s:3:"url";s:9:"/services";s:6:"layout";s:7:"default";}}
+</html>";s:4:"code";N;s:5:"title";s:14:"Portfolio_page";s:3:"url";s:9:"/services";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:9:"blogPosts";a:7:{s:10:"pageNumber";s:11:"{{ :page }}";s:14:"categoryFilter";s:7:"Service";s:12:"postsPerPage";s:1:"6";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:7:"service";s:8:"postPage";s:12:"service_post";}}}

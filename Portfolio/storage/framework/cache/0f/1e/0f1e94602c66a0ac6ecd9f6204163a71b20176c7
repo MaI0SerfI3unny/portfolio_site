@@ -1,4 +1,5 @@
-1608678407a:1:{s:10:"footer.htm";a:5:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:538:"
+1608905924a:1:{s:10:"footer.htm";a:5:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:575:"{% framework extras %}
+{% scripts %}
 <footer>
 <div class="container">
   <a href="#"><label for="">
@@ -15,7 +16,9 @@
 </label></a>
 </div>
 </footer>
-";s:5:"mtime";i:1608677805;s:6:"markup";s:534:"<footer>
+";s:5:"mtime";i:1608710071;s:6:"markup";s:573:"{% framework extras %}
+{% scripts %}
+<footer>
 <div class="container">
   <a href="#"><label for="">
     <i class="fa fa-facebook" aria-hidden="true"></i>

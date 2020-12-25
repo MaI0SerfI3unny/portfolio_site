@@ -1,4 +1,4 @@
-1608678342a:1:{s:11:"default.htm";a:5:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:846:"<!DOCTYPE html>
+1608905924a:1:{s:11:"default.htm";a:5:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:950:"<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -9,18 +9,21 @@
         <link rel="stylesheet" href="{{ 'assets/style/css/index_file.css' | theme }}">
         <link rel="stylesheet" href="{{  'assets/style/css/bootstrap.css' | theme }}">
         <link rel="stylesheet" href="{{  'assets/font-awesome-4.7.0/css/font-awesome.min.css' | theme }}">
+        <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
         {% styles %}
-        {% framework extras %}
-        {% scripts %}
   </head>
   <body>
 {% partial 'header' %}
+
 {% page %}
-{% scripts %}
+
 {% partial 'footer' %}
   </body>
 </html>
-";s:5:"mtime";i:1608677106;s:6:"markup";s:844:"<!DOCTYPE html>
+";s:5:"mtime";i:1608710169;s:6:"markup";s:948:"<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -31,14 +34,17 @@
         <link rel="stylesheet" href="{{ 'assets/style/css/index_file.css' | theme }}">
         <link rel="stylesheet" href="{{  'assets/style/css/bootstrap.css' | theme }}">
         <link rel="stylesheet" href="{{  'assets/font-awesome-4.7.0/css/font-awesome.min.css' | theme }}">
+        <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
         {% styles %}
-        {% framework extras %}
-        {% scripts %}
   </head>
   <body>
 {% partial 'header' %}
+
 {% page %}
-{% scripts %}
+
 {% partial 'footer' %}
   </body>
 </html>";s:4:"code";N;}}

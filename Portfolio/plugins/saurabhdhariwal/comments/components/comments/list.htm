@@ -1,6 +1,8 @@
+<div class="col-md-12">
+
 {% for post in posts %}
 <li>
-    <div class="comment" id="comment-{{post.id}}">
+    <div class="comment" style="width: 100%;" id="comment-{{post.id}}">
         <div class="comment-avatar">
             {{post.avatar|raw}}
         </div>
@@ -26,3 +28,5 @@
     {% endif %}
 </li>
 {% endfor %}
+</div>
+</div>

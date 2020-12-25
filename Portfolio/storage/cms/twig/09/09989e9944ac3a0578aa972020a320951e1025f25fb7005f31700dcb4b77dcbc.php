@@ -78,7 +78,7 @@ class __TwigTemplate_056fabffeefa5a04e284d81c37423843503eaed91cbda1a499cbf872ab2
         // line 16
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("home");
         echo "\">Home</a></li>
-      <li><a class=\"menu__item\"  href=\".\\storage\\app\\uploads\\resume.docx\">Resume</a></li>
+      <li><a class=\"menu__item\"  href=\"storage\\app\\uploads\\resume.docx\">Resume</a></li>
       <li><a class=\"menu__item\"  href=\"";
         // line 18
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("service");
@@ -134,7 +134,7 @@ class __TwigTemplate_056fabffeefa5a04e284d81c37423843503eaed91cbda1a499cbf872ab2
 </label>
     <ul class=\"menu__box\">
       <li><a class=\"menu__item\"  href=\"{{ 'home'|page }}\">Home</a></li>
-      <li><a class=\"menu__item\"  href=\".\\storage\\app\\uploads\\resume.docx\">Resume</a></li>
+      <li><a class=\"menu__item\"  href=\"storage\\app\\uploads\\resume.docx\">Resume</a></li>
       <li><a class=\"menu__item\"  href=\"{{ 'service'|page }}\">Service</a></li>
       <li><a class=\"menu__item\"  href=\"{{ 'portfolio'|page }}\">Portfolio</a></li>
       <li><a class=\"menu__item\"  href=\"{{ 'clients'|page }}\">Client</a></li>

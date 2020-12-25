@@ -1,0 +1,36 @@
+1608904512a:1:{s:18:"client_content.htm";a:6:{s:8:"fileName";s:18:"client_content.htm";s:7:"content";s:520:"[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "Clients"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "clients"
+postPage = "clients"
+==
+{% set posts1 = blogPosts.posts  %}
+
+{% for post in posts %}
+<div class="slider__item ">
+<div>
+<h5>{{ post.title }}</h5>
+<p>{{ post.excerpt }}</p>
+<p>{{ post.content }}</p>
+{% for image in post.featured_images|slice(0, 1) %}
+<img src="{{ image.path}}" alt="">
+{% endfor %}
+</div>
+</div>
+{% endfor %}";s:5:"mtime";i:1608433569;s:6:"markup";s:312:"{% set posts1 = blogPosts.posts  %}
+
+{% for post in posts %}
+<div class="slider__item ">
+<div>
+<h5>{{ post.title }}</h5>
+<p>{{ post.excerpt }}</p>
+<p>{{ post.content }}</p>
+{% for image in post.featured_images|slice(0, 1) %}
+<img src="{{ image.path}}" alt="">
+{% endfor %}
+</div>
+</div>
+{% endfor %}";s:4:"code";N;s:9:"blogPosts";a:7:{s:10:"pageNumber";s:11:"{{ :page }}";s:14:"categoryFilter";s:7:"Clients";s:12:"postsPerPage";s:2:"10";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:7:"clients";s:8:"postPage";s:7:"clients";}}}

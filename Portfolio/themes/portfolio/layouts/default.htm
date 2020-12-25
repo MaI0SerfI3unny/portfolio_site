@@ -9,14 +9,17 @@
         <link rel="stylesheet" href="{{ 'assets/style/css/index_file.css' | theme }}">
         <link rel="stylesheet" href="{{  'assets/style/css/bootstrap.css' | theme }}">
         <link rel="stylesheet" href="{{  'assets/font-awesome-4.7.0/css/font-awesome.min.css' | theme }}">
+        <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
         {% styles %}
-        {% framework extras %}
-        {% scripts %}
   </head>
   <body>
 {% partial 'header' %}
+
 {% page %}
-{% scripts %}
+
 {% partial 'footer' %}
   </body>
 </html>

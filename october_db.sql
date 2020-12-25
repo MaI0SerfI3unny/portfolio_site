@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Час створення: Гру 23 2020 р., 00:03
+-- Час створення: Гру 25 2020 р., 15:23
 -- Версія сервера: 10.4.14-MariaDB
 -- Версія PHP: 7.4.11
 
@@ -403,7 +403,8 @@ CREATE TABLE `rainlab_blog_categories` (
 INSERT INTO `rainlab_blog_categories` (`id`, `name`, `slug`, `code`, `description`, `parent_id`, `nest_left`, `nest_right`, `nest_depth`, `created_at`, `updated_at`) VALUES
 (1, 'Uncategorized', 'uncategorized', NULL, NULL, NULL, 1, 2, 0, '2020-12-19 21:01:20', '2020-12-19 21:01:20'),
 (2, 'Portfolio', 'portfolio', NULL, '', NULL, 3, 4, 0, '2020-12-19 21:08:22', '2020-12-19 21:08:22'),
-(3, 'Clients', 'clients', NULL, '', NULL, 5, 6, 0, '2020-12-20 00:24:00', '2020-12-20 00:24:00');
+(3, 'Clients', 'clients', NULL, '', NULL, 5, 6, 0, '2020-12-20 00:24:00', '2020-12-20 00:24:00'),
+(4, 'Service', 'service', NULL, '', NULL, 7, 8, 0, '2020-12-22 23:20:55', '2020-12-22 23:20:55');
 
 -- --------------------------------------------------------
 
@@ -431,10 +432,15 @@ CREATE TABLE `rainlab_blog_posts` (
 --
 
 INSERT INTO `rainlab_blog_posts` (`id`, `user_id`, `title`, `slug`, `excerpt`, `content`, `content_html`, `published_at`, `published`, `created_at`, `updated_at`, `metadata`) VALUES
-(1, 1, 'First blog post', 'first-blog-post', 'The first ever blog post is here. It might be a good idea to update this post with some more relevant content.', 'This is your first ever **blog post**! It might be a good idea to update this post with some more relevant content.\n\nYou can edit this content by selecting **Blog** from the administration back-end menu.\n\n*Enjoy the good times!*', '<p>This is your first ever <strong>blog post</strong>! It might be a good idea to update this post with some more relevant content.</p>\n<p>You can edit this content by selecting <strong>Blog</strong> from the administration back-end menu.</p>\n<p><em>Enjoy the good times!</em></p>', '2020-12-19 21:01:20', 1, '2020-12-19 21:01:20', '2020-12-19 21:01:20', NULL),
 (2, 1, 'My first site on October', 'my-first-site-on-october', '', 'Look for this description Illon Mask', '<p>Look for this description Illon Mask</p>', '2020-12-20 01:10:00', 1, '2020-12-19 21:17:36', '2020-12-20 00:18:54', NULL),
 (3, 1, 'Paikis Palam', 'paikis-palam', 'Creative Director', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>', '2020-12-20 00:25:19', 1, '2020-12-20 00:25:21', '2020-12-20 00:32:32', NULL),
-(4, 1, 'Zambo', 'zambo', 'UI/UX Designer', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>', '2020-12-20 00:37:02', 0, '2020-12-20 00:37:56', '2020-12-20 00:53:44', NULL);
+(4, 1, 'Zambo', 'zambo', 'UI/UX Designer', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>', '2020-12-20 00:37:02', 0, '2020-12-20 00:37:56', '2020-12-20 00:53:44', NULL),
+(5, 1, 'UI-Design', 'ui-design', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>', NULL, 0, '2020-12-22 23:24:26', '2020-12-22 23:24:26', NULL),
+(6, 1, 'UX-Design', 'ux-design', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>', NULL, 0, '2020-12-22 23:29:47', '2020-12-22 23:29:47', NULL),
+(7, 1, 'Web-development', 'web-development', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>', NULL, 0, '2020-12-22 23:30:32', '2020-12-22 23:32:33', NULL),
+(8, 1, 'Art-Design', 'art-design', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>', NULL, 0, '2020-12-22 23:31:02', '2020-12-22 23:31:02', NULL),
+(9, 1, 'Montage', 'montage', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>', NULL, 0, '2020-12-22 23:31:32', '2020-12-22 23:31:32', NULL),
+(10, 1, 'Other', 'other', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>', NULL, 0, '2020-12-22 23:32:04', '2020-12-22 23:32:04', NULL);
 
 -- --------------------------------------------------------
 
@@ -454,7 +460,13 @@ CREATE TABLE `rainlab_blog_posts_categories` (
 INSERT INTO `rainlab_blog_posts_categories` (`post_id`, `category_id`) VALUES
 (2, 2),
 (3, 3),
-(4, 3);
+(4, 3),
+(5, 4),
+(6, 4),
+(7, 4),
+(8, 4),
+(9, 4),
+(10, 4);
 
 -- --------------------------------------------------------
 
@@ -609,6 +621,15 @@ CREATE TABLE `saurabhdhariwal_comments_posts` (
   `url` varchar(70) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Дамп даних таблиці `saurabhdhariwal_comments_posts`
+--
+
+INSERT INTO `saurabhdhariwal_comments_posts` (`id`, `parent_id`, `user_id`, `author`, `content`, `status`, `email`, `created_at`, `updated_at`, `url`) VALUES
+(6, NULL, NULL, 'Newbie', 'Great job!!!', 1, 'example@gmail.com', '2020-12-25 11:46:23', '2020-12-25 11:46:23', 'portfolio/my-first-site-on-october'),
+(7, NULL, NULL, 'Champion', 'Yeah, im second ^-^', 1, 'somethin@gmail.com', '2020-12-25 11:47:06', '2020-12-25 11:47:06', 'portfolio/my-first-site-on-october'),
+(8, 6, NULL, 'Zamboo', 'Look for this description Illon Mask :^D', 1, 'somethin@gmail.com', '2020-12-25 11:48:32', '2020-12-25 11:48:32', 'portfolio/my-first-site-on-october');
+
 -- --------------------------------------------------------
 
 --
@@ -699,7 +720,13 @@ CREATE TABLE `system_files` (
 INSERT INTO `system_files` (`id`, `disk_name`, `file_name`, `file_size`, `content_type`, `title`, `description`, `field`, `attachment_id`, `attachment_type`, `is_public`, `sort_order`, `created_at`, `updated_at`) VALUES
 (3, '5fde89e58e0f9354352741.png', 'theme-preview.png', 265764, 'image/png', NULL, NULL, 'featured_images', '2', 'RainLab\\Blog\\Models\\Post', 1, 3, '2020-12-19 21:16:53', '2020-12-19 21:17:36'),
 (4, '5fdeb60515ecc582048814.png', 'client.png', 1937, 'image/png', NULL, NULL, 'featured_images', '3', 'RainLab\\Blog\\Models\\Post', 1, 4, '2020-12-20 00:25:09', '2020-12-20 00:25:22'),
-(5, '5fdeb8db3f4db818140553.png', 'Person.png', 31709, 'image/png', NULL, NULL, 'featured_images', '4', 'RainLab\\Blog\\Models\\Post', 1, 5, '2020-12-20 00:37:15', '2020-12-20 00:37:56');
+(5, '5fdeb8db3f4db818140553.png', 'Person.png', 31709, 'image/png', NULL, NULL, 'featured_images', '4', 'RainLab\\Blog\\Models\\Post', 1, 5, '2020-12-20 00:37:15', '2020-12-20 00:37:56'),
+(6, '5fe29c2fa859a346359447.png', 'service1.png', 4503, 'image/png', NULL, NULL, 'featured_images', '5', 'RainLab\\Blog\\Models\\Post', 1, 6, '2020-12-22 23:23:59', '2020-12-22 23:24:26'),
+(7, '5fe29d8213f6c198504238.png', 'service2.png', 5163, 'image/png', NULL, NULL, 'featured_images', '6', 'RainLab\\Blog\\Models\\Post', 1, 7, '2020-12-22 23:29:38', '2020-12-22 23:29:47'),
+(8, '5fe29da8db505755362628.png', 'service3.png', 5961, 'image/png', NULL, NULL, 'featured_images', '7', 'RainLab\\Blog\\Models\\Post', 1, 8, '2020-12-22 23:30:16', '2020-12-22 23:30:32'),
+(9, '5fe29dd0bd1b2137624168.png', 'service4.png', 4436, 'image/png', NULL, NULL, 'featured_images', '8', 'RainLab\\Blog\\Models\\Post', 1, 9, '2020-12-22 23:30:56', '2020-12-22 23:31:02'),
+(10, '5fe29ded7cfa4722271538.png', 'service5.png', 5023, 'image/png', NULL, NULL, 'featured_images', '9', 'RainLab\\Blog\\Models\\Post', 1, 10, '2020-12-22 23:31:25', '2020-12-22 23:31:32'),
+(11, '5fe29e11964e0549336081.png', 'service6.png', 5533, 'image/png', NULL, NULL, 'featured_images', '10', 'RainLab\\Blog\\Models\\Post', 1, 11, '2020-12-22 23:32:01', '2020-12-22 23:32:04');
 
 -- --------------------------------------------------------
 
@@ -1286,7 +1313,12 @@ CREATE TABLE `vdomah_blogviews_views` (
 --
 
 INSERT INTO `vdomah_blogviews_views` (`views`, `post_id`) VALUES
-(1, 2);
+(1, 2),
+(1, 5),
+(1, 6),
+(1, 7),
+(1, 9),
+(1, 10);
 
 --
 -- Індекси збережених таблиць
@@ -1688,7 +1720,7 @@ ALTER TABLE `cms_theme_templates`
 -- AUTO_INCREMENT для таблиці `deferred_bindings`
 --
 ALTER TABLE `deferred_bindings`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT для таблиці `failed_jobs`
@@ -1718,13 +1750,13 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT для таблиці `rainlab_blog_categories`
 --
 ALTER TABLE `rainlab_blog_categories`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT для таблиці `rainlab_blog_posts`
 --
 ALTER TABLE `rainlab_blog_posts`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT для таблиці `rainlab_forum_channels`
@@ -1760,7 +1792,7 @@ ALTER TABLE `rainlab_user_mail_blockers`
 -- AUTO_INCREMENT для таблиці `saurabhdhariwal_comments_posts`
 --
 ALTER TABLE `saurabhdhariwal_comments_posts`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT для таблиці `system_event_logs`
@@ -1772,7 +1804,7 @@ ALTER TABLE `system_event_logs`
 -- AUTO_INCREMENT для таблиці `system_files`
 --
 ALTER TABLE `system_files`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT для таблиці `system_mail_layouts`

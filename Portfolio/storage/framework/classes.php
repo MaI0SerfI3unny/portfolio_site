@@ -83,4 +83,6 @@
   'SaurabhDhariwal\\Comments\\Models\\Comments' => 'plugins\\saurabhdhariwal\\comments\\models\\Comments.php',
   'SaurabhDhariwal\\Comments\\Components\\Comments' => 'plugins\\saurabhdhariwal\\comments\\components\\Comments.php',
   'saurabhdhariwal\\comments\\Controllers\\comments' => 'plugins\\saurabhdhariwal\\comments\\controllers\\comments.php',
+  'RainLab\\User\\Facades\\Auth' => 'plugins\\rainlab\\user\\facades\\Auth.php',
+  'RainLab\\User\\Classes\\AuthManager' => 'plugins\\rainlab\\user\\classes\\AuthManager.php',
 );

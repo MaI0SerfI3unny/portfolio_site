@@ -1,27 +1,41 @@
-<div id="wrap-comment-form">
-    <div class="row" id="comment-form">
+<style media="screen">
+  .input{
+    width: 80%;
+  }
+  textarea{
+    width: 80%;
+  }
+  button{
+    width: 30%;
+    background-color: green;
+    color: white;
+    font-weight: bold;
 
-        <h2 class="comment-reply-title">Add comment
-            <small><a onclick="Comment.cancel()" style="display: none;" rel="nofollow" id="cancel-comment-reply-link"
-                      title="Cancel reply">×</a>
-            </small>
-        </h2>
-        <form>
+  }
+</style>
+<div class="row justify-content-center">
+
+  <h2 class="pt-4 pb-4">Comment</h2>
+<div id="wrap-comment-form" class="col-md-6" class="mt-5">
+    <div class="row justify-content-center" id="comment-form">
+
+
+        <form class=" mt-2">
             <div id="comment_flash_message"></div>
             {% if(user == false) %}
                 <!-- Name Field -->
                 <div class="form-group">
-                    <input placeholder="Name" class="form-control" name="author" type="text">
+                    <input placeholder="Name" class="input" name="author" type="text">
                 </div>
 
                 <!-- Email Field -->
                 <div class="form-group">
-                    <input placeholder="Email" class="form-control" name="email" type="text">
+                    <input placeholder="Email" class="input" name="email" type="text">
                 </div>
             {% endif %}
             <!-- Content Field -->
             <div class="form-group">
-                <textarea placeholder="Leave a comment ..." class="form-control" id="comment-text" name="content"
+                <textarea placeholder="Leave a comment ..." id="comment-text" name="content"
                           cols="50" rows="10"></textarea>
             </div>
 
@@ -34,7 +48,7 @@
 
             <!-- Submit Field -->
             <div class="form-group">
-                <button type="submit" class="btn btn-primary" onclick="Comment.saveButton(event)">Send</button>
+                <button type="submit" class="btn " onclick="Comment.saveButton(event)">Send</button>
             </div>
         </form>
     </div>

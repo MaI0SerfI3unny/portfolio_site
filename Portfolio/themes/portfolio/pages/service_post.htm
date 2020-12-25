@@ -1,0 +1,30 @@
+title = "service_post"
+url = "/services/:slug"
+layout = "default"
+is_hidden = 0
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "service"
+==
+<style media="screen">
+  .post_content{
+    width: 100%;
+    height: auto;
+  }
+  .post_content img{
+    padding: 25px;
+  }
+
+</style>
+
+
+
+<div class="container post_content pb-4">
+  {% for image in post.featured_images|slice(0, 1) %}
+    <p class="text-center"><img src="{{image.path}}" style="width:20%;" alt=""></p>
+  {% endfor %}
+  <h1 class="mb-4 text-center ml-4">{{ post.title }}</h1>
+  <p class="text-center">{{ post.content }}</p>
+  <p class="ml-4">{{ post.published_at}}</p>
+</div>

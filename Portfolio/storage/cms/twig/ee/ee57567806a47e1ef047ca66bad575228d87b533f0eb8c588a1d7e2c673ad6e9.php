@@ -29,13 +29,13 @@ class __TwigTemplate_b3ad90de54e8247bd5656d792ad829ee077b56e4be04a3c0284702a3411
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array();
+        $tags = array("framework" => 1, "scripts" => 2);
         $filters = array();
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
-                [],
+                ['framework', 'scripts'],
                 [],
                 []
             );
@@ -59,6 +59,20 @@ class __TwigTemplate_b3ad90de54e8247bd5656d792ad829ee077b56e4be04a3c0284702a3411
     {
         $macros = $this->macros;
         // line 1
+        $_minify = System\Classes\CombineAssets::instance()->useMinify;
+        if ($_minify) {
+            echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.combined-min.js"></script>'.PHP_EOL;
+        }
+        else {
+            echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
+            echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.extras.js"></script>'.PHP_EOL;
+        }
+        echo '<link rel="stylesheet" property="stylesheet" href="' . Request::getBasePath() .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
+        unset($_minify);
+        // line 2
+        echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
+        echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
+        // line 3
         echo "<footer>
 <div class=\"container\">
   <a href=\"#\"><label for=\"\">
@@ -84,12 +98,14 @@ class __TwigTemplate_b3ad90de54e8247bd5656d792ad829ee077b56e4be04a3c0284702a3411
 
     public function getDebugInfo()
     {
-        return array (  62 => 1,);
+        return array (  76 => 3,  73 => 2,  62 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<footer>
+        return new Source("{% framework extras %}
+{% scripts %}
+<footer>
 <div class=\"container\">
   <a href=\"#\"><label for=\"\">
     <i class=\"fa fa-facebook\" aria-hidden=\"true\"></i>

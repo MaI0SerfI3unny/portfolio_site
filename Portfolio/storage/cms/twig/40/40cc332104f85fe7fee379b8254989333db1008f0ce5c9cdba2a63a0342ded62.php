@@ -67,7 +67,7 @@ class __TwigTemplate_31b62db5d44f75bc17d75e6774a5ff118781420413d782d56ae564ed344
         // line 4
         if ((twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "count", [], "any", false, false, true, 4) > 0)) {
             // line 5
-            echo "        <h3 class=\"text-right\"><span id=\"comments-count\">";
+            echo "        <h3 class=\"text-right mt-2\"><span id=\"comments-count\">";
             echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "count", [], "any", false, false, true, 5), 5, $this->source), "html", null, true);
             echo "</span> comments</h3>
     ";
@@ -99,8 +99,6 @@ class __TwigTemplate_31b62db5d44f75bc17d75e6774a5ff118781420413d782d56ae564ed344
         echo "        </ul>
     </div>
 </div>
-
-
 ";
     }
 
@@ -125,7 +123,7 @@ class __TwigTemplate_31b62db5d44f75bc17d75e6774a5ff118781420413d782d56ae564ed344
 
 <div class=\"col-xs-6\" id=\"comments-content\">
     {% if(__SELF__.count) > 0 %}
-        <h3 class=\"text-right\"><span id=\"comments-count\">{{ __SELF__.count }}</span> comments</h3>
+        <h3 class=\"text-right mt-2\"><span id=\"comments-count\">{{ __SELF__.count }}</span> comments</h3>
     {% endif %}
     {% if(user or __SELF__.settings.allow_guest) %}
 
@@ -138,8 +136,6 @@ class __TwigTemplate_31b62db5d44f75bc17d75e6774a5ff118781420413d782d56ae564ed344
         </ul>
     </div>
 </div>
-
-
 ", "C:\\xampp\\htdocs\\Portfolio/plugins/saurabhdhariwal/comments/components/comments/default.htm", "");
     }
 }

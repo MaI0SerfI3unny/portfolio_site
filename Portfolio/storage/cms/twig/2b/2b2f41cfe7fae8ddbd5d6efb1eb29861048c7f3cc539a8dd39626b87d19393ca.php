@@ -29,8 +29,8 @@ class __TwigTemplate_04ee3fb23fdc747905de01a412d60f9a9e50f321dc77761ed47ddd7a7e7
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("if" => 11);
-        $filters = array("escape" => 28);
+        $tags = array("if" => 25);
+        $filters = array("escape" => 42);
         $functions = array();
 
         try {
@@ -59,58 +59,72 @@ class __TwigTemplate_04ee3fb23fdc747905de01a412d60f9a9e50f321dc77761ed47ddd7a7e7
     {
         $macros = $this->macros;
         // line 1
-        echo "<div id=\"wrap-comment-form\">
-    <div class=\"row\" id=\"comment-form\">
+        echo "<style media=\"screen\">
+  .input{
+    width: 80%;
+  }
+  textarea{
+    width: 80%;
+  }
+  button{
+    width: 30%;
+    background-color: green;
+    color: white;
+    font-weight: bold;
 
-        <h2 class=\"comment-reply-title\">Add comment
-            <small><a onclick=\"Comment.cancel()\" style=\"display: none;\" rel=\"nofollow\" id=\"cancel-comment-reply-link\"
-                      title=\"Cancel reply\">×</a>
-            </small>
-        </h2>
-        <form>
+  }
+</style>
+<div class=\"row justify-content-center\">
+
+  <h2 class=\"pt-4 pb-4\">Comment</h2>
+<div id=\"wrap-comment-form\" class=\"col-md-6\" class=\"mt-5\">
+    <div class=\"row justify-content-center\" id=\"comment-form\">
+
+
+        <form class=\" mt-2\">
             <div id=\"comment_flash_message\"></div>
             ";
-        // line 11
+        // line 25
         if ((($context["user"] ?? null) == false)) {
-            // line 12
+            // line 26
             echo "                <!-- Name Field -->
                 <div class=\"form-group\">
-                    <input placeholder=\"Name\" class=\"form-control\" name=\"author\" type=\"text\">
+                    <input placeholder=\"Name\" class=\"input\" name=\"author\" type=\"text\">
                 </div>
 
                 <!-- Email Field -->
                 <div class=\"form-group\">
-                    <input placeholder=\"Email\" class=\"form-control\" name=\"email\" type=\"text\">
+                    <input placeholder=\"Email\" class=\"input\" name=\"email\" type=\"text\">
                 </div>
             ";
         }
-        // line 22
+        // line 36
         echo "            <!-- Content Field -->
             <div class=\"form-group\">
-                <textarea placeholder=\"Leave a comment ...\" class=\"form-control\" id=\"comment-text\" name=\"content\"
+                <textarea placeholder=\"Leave a comment ...\" id=\"comment-text\" name=\"content\"
                           cols=\"50\" rows=\"10\"></textarea>
             </div>
 
             <input name=\"post_id\" type=\"hidden\" value=\"";
-        // line 28
-        echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "post_id", [], "any", false, false, true, 28), 28, $this->source), "html", null, true);
+        // line 42
+        echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "post_id", [], "any", false, false, true, 42), 42, $this->source), "html", null, true);
         echo "\">
 
             ";
-        // line 30
-        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "settings", [], "any", false, false, true, 30), "recaptcha_enabled", [], "any", false, false, true, 30)) {
-            // line 31
+        // line 44
+        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "settings", [], "any", false, false, true, 44), "recaptcha_enabled", [], "any", false, false, true, 44)) {
+            // line 45
             echo "            <div class=\"g-recaptcha\" data-sitekey=\"";
-            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "settings", [], "any", false, false, true, 31), "site_key", [], "any", false, false, true, 31), 31, $this->source), "html", null, true);
+            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "settings", [], "any", false, false, true, 45), "site_key", [], "any", false, false, true, 45), 45, $this->source), "html", null, true);
             echo "\"></div>
             <br>
             ";
         }
-        // line 34
+        // line 48
         echo "
             <!-- Submit Field -->
             <div class=\"form-group\">
-                <button type=\"submit\" class=\"btn btn-primary\" onclick=\"Comment.saveButton(event)\">Send</button>
+                <button type=\"submit\" class=\"btn \" onclick=\"Comment.saveButton(event)\">Send</button>
             </div>
         </form>
     </div>
@@ -130,35 +144,49 @@ class __TwigTemplate_04ee3fb23fdc747905de01a412d60f9a9e50f321dc77761ed47ddd7a7e7
 
     public function getDebugInfo()
     {
-        return array (  110 => 34,  103 => 31,  101 => 30,  96 => 28,  88 => 22,  76 => 12,  74 => 11,  62 => 1,);
+        return array (  124 => 48,  117 => 45,  115 => 44,  110 => 42,  102 => 36,  90 => 26,  88 => 25,  62 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<div id=\"wrap-comment-form\">
-    <div class=\"row\" id=\"comment-form\">
+        return new Source("<style media=\"screen\">
+  .input{
+    width: 80%;
+  }
+  textarea{
+    width: 80%;
+  }
+  button{
+    width: 30%;
+    background-color: green;
+    color: white;
+    font-weight: bold;
 
-        <h2 class=\"comment-reply-title\">Add comment
-            <small><a onclick=\"Comment.cancel()\" style=\"display: none;\" rel=\"nofollow\" id=\"cancel-comment-reply-link\"
-                      title=\"Cancel reply\">×</a>
-            </small>
-        </h2>
-        <form>
+  }
+</style>
+<div class=\"row justify-content-center\">
+
+  <h2 class=\"pt-4 pb-4\">Comment</h2>
+<div id=\"wrap-comment-form\" class=\"col-md-6\" class=\"mt-5\">
+    <div class=\"row justify-content-center\" id=\"comment-form\">
+
+
+        <form class=\" mt-2\">
             <div id=\"comment_flash_message\"></div>
             {% if(user == false) %}
                 <!-- Name Field -->
                 <div class=\"form-group\">
-                    <input placeholder=\"Name\" class=\"form-control\" name=\"author\" type=\"text\">
+                    <input placeholder=\"Name\" class=\"input\" name=\"author\" type=\"text\">
                 </div>
 
                 <!-- Email Field -->
                 <div class=\"form-group\">
-                    <input placeholder=\"Email\" class=\"form-control\" name=\"email\" type=\"text\">
+                    <input placeholder=\"Email\" class=\"input\" name=\"email\" type=\"text\">
                 </div>
             {% endif %}
             <!-- Content Field -->
             <div class=\"form-group\">
-                <textarea placeholder=\"Leave a comment ...\" class=\"form-control\" id=\"comment-text\" name=\"content\"
+                <textarea placeholder=\"Leave a comment ...\" id=\"comment-text\" name=\"content\"
                           cols=\"50\" rows=\"10\"></textarea>
             </div>
 
@@ -171,7 +199,7 @@ class __TwigTemplate_04ee3fb23fdc747905de01a412d60f9a9e50f321dc77761ed47ddd7a7e7
 
             <!-- Submit Field -->
             <div class=\"form-group\">
-                <button type=\"submit\" class=\"btn btn-primary\" onclick=\"Comment.saveButton(event)\">Send</button>
+                <button type=\"submit\" class=\"btn \" onclick=\"Comment.saveButton(event)\">Send</button>
             </div>
         </form>
     </div>
